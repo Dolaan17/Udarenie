@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример сайта с библиотекой слов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Словарь</h1>
+  <input type="text" id="searchInput" onkeyup="search()" placeholder="Поиск..." />
+  <ul id="wordList">
+    <li onclick="showExplanation('еретик')">Еретик</li>
+    <li onclick="showExplanation('семинар')">Семинар</li>
+    <li onclick="showExplanation('акцент')">Акцент</li>
+    <li onclick="showExplanation('еретик')">Договор</li>
+    <li onclick="showExplanation('семинар')">Каталог</li>
+    <li onclick="showExplanation('акцент')">Квартал</li>
+    <li onclick="showExplanation('еретик')">Звонит</li>
+    <li onclick="showExplanation('семинар')">Начался</li>
+    <li onclick="showExplanation('акцент')">Облегчить</li>
+    <li onclick="showExplanation('еретик')">Углубить</li>
+    <li onclick="showExplanation('семинар')">Красивее</li>
+    <li onclick="showExplanation('акцент')">Латте</li>
+    <li onclick="showExplanation('еретик')">Мусоропровод</li>
+    <li onclick="showExplanation('семинар')">Апостроф</li>
+    <li onclick="showExplanation('акцент')">Феномен</li>
+    <li onclick="showExplanation('еретик')">Свёкла</li>
+    <li onclick="showExplanation('семинар')">Щавель</li>
+    <li onclick="showExplanation('акцент')">Средства</li>
+      
+    <!-- Добавь больше слов по мере необходимости, с разными обработчиками событий -->
+  </ul>
+    <script>
+  function divideWordsIntoRows() {
+    // ...
+  }
+
+  window.onload = function() {
+    divideWordsIntoRows();
+  };
+</script>
+      <div id="explanationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeExplanationModal()">&times;</span>
+      <p id="explanationText">Пояснение по ударению по выбранному слову</p>
+    </div>
+  </div>
+<div class="quiz">
+  <p id="question">Вопрос: А вы знаете, как правильно выставить ударение в слове ЕРЕТИК?</p>
+  <div id="answerOptions">
+ <button onclick="checkAnswer('correct', 'новое слово 1')">Вариант ответа 1</button>
+      <span>или</span>
+      <button onclick="checkAnswer('incorrect', 'новое слово 2')">Вариант ответа 2</button>
+  </div>
+</div>
+<div id="result"></div>
+  <script src="script.js"></script>
+    <script>
+  // Вызов функции после загрузки страницы
+  window.onload = function() {
+    sortWordsAlphabetically();
+  };
+</script>
+    
+</body>
+</html>
