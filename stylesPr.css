@@ -1,4 +1,34 @@
-﻿body {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+        .rule {
+            margin-bottom: 20px;
+        }
+        .examples {
+            margin-left: 20px;
+            font-style: italic;
+        }
+        .note {
+            font-weight: bold;
+        }
+        .share {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0;
+        }
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url("img/fon.jpg"); /* ваш фон */

@@ -1,67 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пример сайта с библиотекой слов</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СЛОВАРЬ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Словарь</h1>
-  <input type="text" id="searchInput" onkeyup="search()" placeholder="Поиск..." />
-  <ul id="wordList">
-    <li onclick="showExplanation('еретик')">Еретик</li>
-    <li onclick="showExplanation('семинар')">Семинар</li>
-    <li onclick="showExplanation('акцент')">Акцент</li>
-    <li onclick="showExplanation('еретик')">Договор</li>
-    <li onclick="showExplanation('семинар')">Каталог</li>
-    <li onclick="showExplanation('акцент')">Квартал</li>
-    <li onclick="showExplanation('еретик')">Звонит</li>
-    <li onclick="showExplanation('семинар')">Начался</li>
-    <li onclick="showExplanation('акцент')">Облегчить</li>
-    <li onclick="showExplanation('еретик')">Углубить</li>
-    <li onclick="showExplanation('семинар')">Красивее</li>
-    <li onclick="showExplanation('акцент')">Латте</li>
-    <li onclick="showExplanation('еретик')">Мусоропровод</li>
-    <li onclick="showExplanation('семинар')">Апостроф</li>
-    <li onclick="showExplanation('акцент')">Феномен</li>
-    <li onclick="showExplanation('еретик')">Свёкла</li>
-    <li onclick="showExplanation('семинар')">Щавель</li>
-    <li onclick="showExplanation('акцент')">Средства</li>
-      
-    <!-- Добавь больше слов по мере необходимости, с разными обработчиками событий -->
-  </ul>
-    <script>
-  function divideWordsIntoRows() {
-    // ...
-  }
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span class="navbar-title">СЛОВАРЬ</span>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Словарь</a>
+            <a href="media.html">Медиа</a>
+            <a href="pravila.html">Правила</a>
+            <a href="upr.html">Упражнения</a>
+        </div>
+    </nav>
 
-  window.onload = function() {
-    divideWordsIntoRows();
-  };
-</script>
-      <div id="explanationModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeExplanationModal()">&times;</span>
-      <p id="explanationText">Пояснение по ударению по выбранному слову</p>
+    <main>
+        <h1 class="main-title">СЛОВАРЬ</h1>
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Поиск...">
+
+        <div class="frames">
+            <div class="frame">
+                <ul id="wordList1" class="word-list">
+                    <li onclick="showExplanation('еретик')">Еретик</li>
+                    <li onclick="showExplanation('семинар')">Семинар</li>
+                    <li onclick="showExplanation('акцент')">Акцент</li>
+                    <li onclick="showExplanation('договор')">Договор</li>
+                    <li onclick="showExplanation('каталог')">Каталог</li>
+                    <li onclick="showExplanation('квартал')">Квартал</li>
+                    <li onclick="showExplanation('звонит')">Звонит</li>
+                    <li onclick="showExplanation('начался')">Начался</li>
+                    <li onclick="showExplanation('облегчить')">Облегчить</li>
+                    <li onclick="showExplanation('углубить')">Углубить</li>
+                    <li onclick="showExplanation('красивее')">Красивее</li>
+                    <li onclick="showExplanation('латте')">Латте</li>
+                    <li onclick="showExplanation('мусоропровод')">Мусоропровод</li>
+                    <li onclick="showExplanation('апостроф')">Апостроф</li>
+                    <li onclick="showExplanation('феномен')">Феномен</li>
+                    <li onclick="showExplanation('свёкла')">Свёкла</li>
+                    <li onclick="showExplanation('щавель')">Щавель</li>
+                    <li onclick="showExplanation('средства')">Средства</li>
+                    <li onclick="showExplanation('эксперт')">Эксперт</li>
+                    <li onclick="showExplanation('жалюзи')">Жалюзи</li>
+                    <li onclick="showExplanation('одновременно')">Одновременно</li>
+                    <li onclick="showExplanation('премировать')">Премировать</li>
+                    <li onclick="showExplanation('асимметрия')">Асимметрия</li>
+                    <li onclick="showExplanation('баловать')">Баловать</li>
+                    <li onclick="showExplanation('вероисповедание')">Вероисповедание</li>
+                    <li onclick="showExplanation('гражданство')">Гражданство</li>
+                    <li onclick="showExplanation('дефис')">Дефис</li>
+                    <li onclick="showExplanation('диспансер')">Диспансер</li>
+                    <li onclick="showExplanation('донельзя')">Донельзя</li>
+                    <li onclick="showExplanation('еретик')">Еретик</li>
+                    <li onclick="showExplanation('жалюзи')">Жалюзи</li>
+                    <li onclick="showExplanation('завидно')">Завидно</li>
+                    <li onclick="showExplanation('заговор')">Заговор</li>
+                    <li onclick="showExplanation('занятый')">Занятый</li>
+                    <li onclick="showExplanation('звонишь')">Звонишь</li>
+                    <li onclick="showExplanation('избалованный')">Избалованный</li>
+                    <li onclick="showExplanation('индустрия')">Индустрия</li>
+                    <li onclick="showExplanation('искра')">Искра</li>
+                    <li onclick="showExplanation('исчерпать')">Исчерпать</li>
+                    <li onclick="showExplanation('кашлянуть')">Кашлянуть</li>
+                    <li onclick="showExplanation('коклюш')">Коклюш</li>
+                    <li onclick="showExplanation('корысть')">Корысть</li>
+                    <li onclick="showExplanation('крапива')">Крапива</li>
+                    <li onclick="showExplanation('кремень')">Кремень</li>
+                    <li onclick="showExplanation('кровоточить')">Кровоточить</li>
+                    <li onclick="showExplanation('кулинария')">Кулинария</li>
+                    <li onclick="showExplanation('ловкач')">Ловкач</li>
+                    <li onclick="showExplanation('маневры')">Маневры</li>
+                    <li onclick="showExplanation('мельком')">Мельком</li>
+                    <li onclick="showExplanation('мозаичный')">Мозаичный</li>
+                    <li onclick="showExplanation('молох')">Молох</li>
+                    <li onclick="showExplanation('мусоропровод')">Мусоропровод</li>
+                    <li onclick="showExplanation('намерение')">Намерение</li>
+                    <li onclick="showExplanation('недуг')">Недуг</li>
+                    <li onclick="showExplanation('некролог')">Некролог</li>
+                    <li onclick="showExplanation('ненависть')">Ненависть</li>
+                    <li onclick="showExplanation('нефтепровод')">Нефтепровод</li>
+                    <li onclick="showExplanation('новорожденный')">Новорожденный</li>
+                    <li onclick="showExplanation('норма')">Норма</li>
+                    <li onclick="showExplanation('обеспечение')">Обеспечение</li>
+                    <li onclick="showExplanation('обетованный')">Обетованный</li>
+                    <li onclick="showExplanation('облегчить')">Облегчить</li>
+                    <li onclick="showExplanation('оптовый')">Оптовый</li>
+            </div>
+            <div class="frame">
+                <ul id="wordList2" class="word-list">
+                    <li onclick="showExplanation('осведомить')">Осведомить</li>
+                    <li onclick="showExplanation('отзыв')">Отзыв</li>
+                    <li onclick="showExplanation('памятуя')">Памятуя</li>
+                    <li onclick="showExplanation('паралич')">Паралич</li>
+                    <li onclick="showExplanation('петля')">Петля</li>
+                    <li onclick="showExplanation('пломбировать')">Пломбировать</li>
+                    <li onclick="showExplanation('повторение')">Повторение</li>
+                    <li onclick="showExplanation('подростковый')">Подростковый</li>
+                    <li onclick="showExplanation('позвонишь')">Позвонишь</li>
+                    <li onclick="showExplanation('понимание')">Понимание</li>
+                    <li onclick="showExplanation('порядок')">Порядок</li>
+                    <li onclick="showExplanation('похороны')">Похороны</li>
+                    <li onclick="showExplanation('премировать')">Премировать</li>
+                    <li onclick="showExplanation('приговор')">Приговор</li>
+                    <li onclick="showExplanation('приданое')">Приданое</li>
+                    <li onclick="showExplanation('призыв')">Призыв</li>
+                    <li onclick="showExplanation('принудить')">Принудить</li>
+                    <li onclick="showExplanation('прозорливый')">Прозорливый</li>
+                    <li onclick="showExplanation('простыня')">Простыня</li>
+                    <li onclick="showExplanation('пуловер')">Пуловер</li>
+                    <li onclick="showExplanation('ракушка')">Ракушка</li>
+                    <li onclick="showExplanation('ревень')">Ревень</li>
+                    <li onclick="showExplanation('сантиметр')">Сантиметр</li>
+                    <li onclick="showExplanation('свекла')">Свекла</li>
+                    <li onclick="showExplanation('сироты')">Сироты</li>
+                    <li onclick="showExplanation('сосредоточение')">Сосредоточение</li>
+                    <li onclick="showExplanation('средство')">Средство</li>
+                    <li onclick="showExplanation('статуя')">Статуя</li>
+                    <li onclick="showExplanation('столяр')">Столяр</li>
+                    <li onclick="showExplanation('таможня')">Таможня</li>
+                    <li onclick="showExplanation('творог')">Творог</li>
+                    <li onclick="showExplanation('тефтели')">Тефтели</li>
+                    <li onclick="showExplanation('тотчас')">Тотчас</li>
+                    <li onclick="showExplanation('трансфер')">Трансфер</li>
+                    <li onclick="showExplanation('трубопровод')">Трубопровод</li>
+                    <li onclick="showExplanation('туфля')">Туфля</li>
+                    <li onclick="showExplanation('углубленный')">Углубленный</li>
+                    <li onclick="showExplanation('уведомить')">Уведомить</li>
+                    <li onclick="showExplanation('украинский')">Украинский</li>
+                    <li onclick="showExplanation('факсимиле')">Факсимиле</li>
+                    <li onclick="showExplanation('фарфор')">Фарфор</li>
+                    <li onclick="showExplanation('халатность')">Халатность</li>
+                    <li onclick="showExplanation('хозяева')">Хозяева</li>
+                    <li onclick="showExplanation('цемент')">Цемент</li>
+                    <li onclick="showExplanation('цепочка')">Цепочка</li>
+                    <li onclick="showExplanation('шасси')">Шасси</li>
+                    <li onclick="showExplanation('шофер')">Шофер</li>
+                    <li onclick="showExplanation('экскурс')">Экскурс</li>
+                    <li onclick="showExplanation('эксперт')">Эксперт</li>
+                    <li onclick="showExplanation('юриспруденция')">Юриспруденция</li>
+                    <li onclick="showExplanation('языковой')">Языковой</li>
+                    <li onclick="showExplanation('алфавит')">Алфавит</li>
+                    <li onclick="showExplanation('аэропорты')">Аэропорты</li>
+                    <li onclick="showExplanation('балованный')">Балованный</li>
+                    <li onclick="showExplanation('брала')">Брала</li>
+                    <li onclick="showExplanation('верба')">Верба</li>
+                    <li onclick="showExplanation('включит')">Включит</li>
+                    <li onclick="showExplanation('гастрономия')">Гастрономия</li>
+                    <li onclick="showExplanation('гравировка')">Гравировка</li>
+                    <li onclick="showExplanation('декларация')">Декларация</li>
+                    <li onclick="showExplanation('диоптрия')">Диоптрия</li>
+                    <li onclick="showExplanation('договоренность')">Договоренность</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+        <script>
+            function divideWordsIntoRows() {
+                // ...
+            }
+
+            window.onload = function () {
+                divideWordsIntoRows();
+            };
+    </script>
+    <div id="explanationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeExplanationModal()">&times;</span>
+            <p id="explanationText">Пояснение по ударению по выбранному слову</p>
+        </div>
     </div>
-  </div>
-<div class="quiz">
-  <p id="question">Вопрос: А вы знаете, как правильно выставить ударение в слове ЕРЕТИК?</p>
-  <div id="answerOptions">
- <button onclick="checkAnswer('correct', 'новое слово 1')">Вариант ответа 1</button>
-      <span>или</span>
-      <button onclick="checkAnswer('incorrect', 'новое слово 2')">Вариант ответа 2</button>
-  </div>
-</div>
-<div id="result"></div>
-  <script src="script.js"></script>
+    <div class="quiz">
+        <p id="question">Вопрос: А вы знаете, как правильно выставить ударение в слове ЕРЕТИК?</p>
+        <div id="answerOptions">
+            <button onclick="checkAnswer('correct', 'новое слово 1')">Вариант ответа 1</button>
+            <span>или</span>
+            <button onclick="checkAnswer('incorrect', 'новое слово 2')">Вариант ответа 2</button>
+        </div>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
     <script>
-  // Вызов функции после загрузки страницы
-  window.onload = function() {
-    sortWordsAlphabetically();
-  };
-</script>
-    
+        // Вызов функции после загрузки страницы
+        window.onload = function () {
+            sortWordsAlphabetically();
+        };
+    </script>
+    <footer>
+        СЛОВАРЬ &copy; 2024
+    </footer>
+
 </body>
 </html>
+tml>

@@ -1,4 +1,40 @@
-﻿body {
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .exercise {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            background-color: #f8f9fa;
+        }
+        .exercise-number {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .word {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .instructions {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url("img/fon.jpg"); /* ваш фон */
