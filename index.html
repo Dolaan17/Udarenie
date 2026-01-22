@@ -1,199 +1,217 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СЛОВАРЬ</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Фонетика современного русского языка - Практикум</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <span class="navbar-title">СЛОВАРЬ</span>
-        </div>
-        <div class="navbar-links">
-            <a href="index.html">Словарь</a>
-            <a href="media.html">Медиа</a>
-            <a href="pravila.html">Правила</a>
-            <a href="upr.html">Упражнения</a>
-        </div>
-    </nav>
-
-    <main>
-        <h1 class="main-title">СЛОВАРЬ</h1>
-        <input type="text" id="searchInput" onkeyup="search()" placeholder="Поиск...">
-
-        <div class="frames">
-            <div class="frame">
-                <ul id="wordList1" class="word-list">
-                    <li onclick="showExplanation('еретик')">Еретик</li>
-                    <li onclick="showExplanation('семинар')">Семинар</li>
-                    <li onclick="showExplanation('акцент')">Акцент</li>
-                    <li onclick="showExplanation('договор')">Договор</li>
-                    <li onclick="showExplanation('каталог')">Каталог</li>
-                    <li onclick="showExplanation('квартал')">Квартал</li>
-                    <li onclick="showExplanation('звонит')">Звонит</li>
-                    <li onclick="showExplanation('начался')">Начался</li>
-                    <li onclick="showExplanation('облегчить')">Облегчить</li>
-                    <li onclick="showExplanation('углубить')">Углубить</li>
-                    <li onclick="showExplanation('красивее')">Красивее</li>
-                    <li onclick="showExplanation('латте')">Латте</li>
-                    <li onclick="showExplanation('мусоропровод')">Мусоропровод</li>
-                    <li onclick="showExplanation('апостроф')">Апостроф</li>
-                    <li onclick="showExplanation('феномен')">Феномен</li>
-                    <li onclick="showExplanation('свёкла')">Свёкла</li>
-                    <li onclick="showExplanation('щавель')">Щавель</li>
-                    <li onclick="showExplanation('средства')">Средства</li>
-                    <li onclick="showExplanation('эксперт')">Эксперт</li>
-                    <li onclick="showExplanation('жалюзи')">Жалюзи</li>
-                    <li onclick="showExplanation('одновременно')">Одновременно</li>
-                    <li onclick="showExplanation('премировать')">Премировать</li>
-                    <li onclick="showExplanation('асимметрия')">Асимметрия</li>
-                    <li onclick="showExplanation('баловать')">Баловать</li>
-                    <li onclick="showExplanation('вероисповедание')">Вероисповедание</li>
-                    <li onclick="showExplanation('гражданство')">Гражданство</li>
-                    <li onclick="showExplanation('дефис')">Дефис</li>
-                    <li onclick="showExplanation('диспансер')">Диспансер</li>
-                    <li onclick="showExplanation('донельзя')">Донельзя</li>
-                    <li onclick="showExplanation('еретик')">Еретик</li>
-                    <li onclick="showExplanation('жалюзи')">Жалюзи</li>
-                    <li onclick="showExplanation('завидно')">Завидно</li>
-                    <li onclick="showExplanation('заговор')">Заговор</li>
-                    <li onclick="showExplanation('занятый')">Занятый</li>
-                    <li onclick="showExplanation('звонишь')">Звонишь</li>
-                    <li onclick="showExplanation('избалованный')">Избалованный</li>
-                    <li onclick="showExplanation('индустрия')">Индустрия</li>
-                    <li onclick="showExplanation('искра')">Искра</li>
-                    <li onclick="showExplanation('исчерпать')">Исчерпать</li>
-                    <li onclick="showExplanation('кашлянуть')">Кашлянуть</li>
-                    <li onclick="showExplanation('коклюш')">Коклюш</li>
-                    <li onclick="showExplanation('корысть')">Корысть</li>
-                    <li onclick="showExplanation('крапива')">Крапива</li>
-                    <li onclick="showExplanation('кремень')">Кремень</li>
-                    <li onclick="showExplanation('кровоточить')">Кровоточить</li>
-                    <li onclick="showExplanation('кулинария')">Кулинария</li>
-                    <li onclick="showExplanation('ловкач')">Ловкач</li>
-                    <li onclick="showExplanation('маневры')">Маневры</li>
-                    <li onclick="showExplanation('мельком')">Мельком</li>
-                    <li onclick="showExplanation('мозаичный')">Мозаичный</li>
-                    <li onclick="showExplanation('молох')">Молох</li>
-                    <li onclick="showExplanation('мусоропровод')">Мусоропровод</li>
-                    <li onclick="showExplanation('намерение')">Намерение</li>
-                    <li onclick="showExplanation('недуг')">Недуг</li>
-                    <li onclick="showExplanation('некролог')">Некролог</li>
-                    <li onclick="showExplanation('ненависть')">Ненависть</li>
-                    <li onclick="showExplanation('нефтепровод')">Нефтепровод</li>
-                    <li onclick="showExplanation('новорожденный')">Новорожденный</li>
-                    <li onclick="showExplanation('норма')">Норма</li>
-                    <li onclick="showExplanation('обеспечение')">Обеспечение</li>
-                    <li onclick="showExplanation('обетованный')">Обетованный</li>
-                    <li onclick="showExplanation('облегчить')">Облегчить</li>
-                    <li onclick="showExplanation('оптовый')">Оптовый</li>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-book-open"></i> Фонетика русского языка</h1>
+                <p>Практикум для студентов-бакалавров</p>
             </div>
-            <div class="frame">
-                <ul id="wordList2" class="word-list">
-                    <li onclick="showExplanation('осведомить')">Осведомить</li>
-                    <li onclick="showExplanation('отзыв')">Отзыв</li>
-                    <li onclick="showExplanation('памятуя')">Памятуя</li>
-                    <li onclick="showExplanation('паралич')">Паралич</li>
-                    <li onclick="showExplanation('петля')">Петля</li>
-                    <li onclick="showExplanation('пломбировать')">Пломбировать</li>
-                    <li onclick="showExplanation('повторение')">Повторение</li>
-                    <li onclick="showExplanation('подростковый')">Подростковый</li>
-                    <li onclick="showExplanation('позвонишь')">Позвонишь</li>
-                    <li onclick="showExplanation('понимание')">Понимание</li>
-                    <li onclick="showExplanation('порядок')">Порядок</li>
-                    <li onclick="showExplanation('похороны')">Похороны</li>
-                    <li onclick="showExplanation('премировать')">Премировать</li>
-                    <li onclick="showExplanation('приговор')">Приговор</li>
-                    <li onclick="showExplanation('приданое')">Приданое</li>
-                    <li onclick="showExplanation('призыв')">Призыв</li>
-                    <li onclick="showExplanation('принудить')">Принудить</li>
-                    <li onclick="showExplanation('прозорливый')">Прозорливый</li>
-                    <li onclick="showExplanation('простыня')">Простыня</li>
-                    <li onclick="showExplanation('пуловер')">Пуловер</li>
-                    <li onclick="showExplanation('ракушка')">Ракушка</li>
-                    <li onclick="showExplanation('ревень')">Ревень</li>
-                    <li onclick="showExplanation('сантиметр')">Сантиметр</li>
-                    <li onclick="showExplanation('свекла')">Свекла</li>
-                    <li onclick="showExplanation('сироты')">Сироты</li>
-                    <li onclick="showExplanation('сосредоточение')">Сосредоточение</li>
-                    <li onclick="showExplanation('средство')">Средство</li>
-                    <li onclick="showExplanation('статуя')">Статуя</li>
-                    <li onclick="showExplanation('столяр')">Столяр</li>
-                    <li onclick="showExplanation('таможня')">Таможня</li>
-                    <li onclick="showExplanation('творог')">Творог</li>
-                    <li onclick="showExplanation('тефтели')">Тефтели</li>
-                    <li onclick="showExplanation('тотчас')">Тотчас</li>
-                    <li onclick="showExplanation('трансфер')">Трансфер</li>
-                    <li onclick="showExplanation('трубопровод')">Трубопровод</li>
-                    <li onclick="showExplanation('туфля')">Туфля</li>
-                    <li onclick="showExplanation('углубленный')">Углубленный</li>
-                    <li onclick="showExplanation('уведомить')">Уведомить</li>
-                    <li onclick="showExplanation('украинский')">Украинский</li>
-                    <li onclick="showExplanation('факсимиле')">Факсимиле</li>
-                    <li onclick="showExplanation('фарфор')">Фарфор</li>
-                    <li onclick="showExplanation('халатность')">Халатность</li>
-                    <li onclick="showExplanation('хозяева')">Хозяева</li>
-                    <li onclick="showExplanation('цемент')">Цемент</li>
-                    <li onclick="showExplanation('цепочка')">Цепочка</li>
-                    <li onclick="showExplanation('шасси')">Шасси</li>
-                    <li onclick="showExplanation('шофер')">Шофер</li>
-                    <li onclick="showExplanation('экскурс')">Экскурс</li>
-                    <li onclick="showExplanation('эксперт')">Эксперт</li>
-                    <li onclick="showExplanation('юриспруденция')">Юриспруденция</li>
-                    <li onclick="showExplanation('языковой')">Языковой</li>
-                    <li onclick="showExplanation('алфавит')">Алфавит</li>
-                    <li onclick="showExplanation('аэропорты')">Аэропорты</li>
-                    <li onclick="showExplanation('балованный')">Балованный</li>
-                    <li onclick="showExplanation('брала')">Брала</li>
-                    <li onclick="showExplanation('верба')">Верба</li>
-                    <li onclick="showExplanation('включит')">Включит</li>
-                    <li onclick="showExplanation('гастрономия')">Гастрономия</li>
-                    <li onclick="showExplanation('гравировка')">Гравировка</li>
-                    <li onclick="showExplanation('декларация')">Декларация</li>
-                    <li onclick="showExplanation('диоптрия')">Диоптрия</li>
-                    <li onclick="showExplanation('договоренность')">Договоренность</li>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="theme1.html">Тема 1</a></li>
+                    <li><a href="theme2.html">Тема 2</a></li>
+                    <li><a href="theme3.html">Тема 3</a></li>
+                    <li><a href="theme4.html">Тема 4</a></li>
+                    <li><a href="theme5.html">Тема 5</a></li>
+                    <li><a href="theme6.html">Тема 6</a></li>
+                    <li><a href="theme7.html">Тема 7</a></li>
+                    <li><a href="theme8.html">Тема 8</a></li>
+                    <li><a href="theme9.html">Тема 9</a></li>
+                    <li><a href="theme10.html">Тема 10</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
+    </header>
+
+    <main class="container">
+        <section class="preface">
+            <h2><i class="fas fa-file-alt"></i> ГЛАВНОЕ</h2>
+            <div class="content-box">
+                <p>Данный практикум «Фонетика современного русского языка» подготовлен в соответствии с ФГОС, структура и содержание которого определяются государственными требованиями к минимуму содержания и уровню подготовки студентов-бакалавров, учебный план которых предполагает изучение дисциплины «Современный русский литературный язык».</p>
+
+                <p>Цель пособия -- выработать у студентов представление о звуковой стороне языковой деятельности и сформировать понятие о звуковых единицах в трёх аспектах: акустическом, артикуляционном и фонологическом.</p>
+
+                <p>В пособии предложен комплекс заданий по фонетике русского языка, предназначенный для введения и закрепления различных фонетических явлений: имитационные, дифференциальные и/или аналитико-ситуативные, тренировочные задания на повторение и закрепление звуков. Представленный комплекс заданий ставит своей задачей научить студентов осознавать происхождение ошибок в произношении, связанное с интерференцией родного языка с русским языком в области фонетики.</p>
+
+                <p>Практикум может быть использован при подготовке к практическим занятиям, любым формам рубежного контроля, а также для самостоятельной работы студентов.</p>
+            </div>
+        </section>
+
+        <section class="reviewers">
+            <h2><i class="fas fa-user-check"></i> Рецензенты</h2>
+            <div class="content-box">
+                <div class="reviewer">
+                    <h3>Саая Оюмаа Маадыр-ооловна</h3>
+                    <p>Кандидат филологических наук, ведущий научный сотрудник Тувинского института гуманитарных и прикладных социально-экономических исследований при Правительстве Республики Тыва.</p>
+                </div>
+                <div class="reviewer">
+                    <h3>Сат Кира Ангыр-ооловна</h3>
+                    <p>Кандидат филологических наук, доцент кафедры русского языка и литературы филологического факультета ТувГУ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="phonetic-analysis">
+            <h2><i class="fas fa-search"></i> Порядок и образец фонетического разбора</h2>
+            <div class="content-box">
+                <ol class="analysis-steps">
+                    <li>Фонетическая транскрипция с соблюдением правил литературного произношения.</li>
+                    <li>
+                        Слог. Характеристика каждого слога:
+                        <ul>
+                            <li>начальный, неначальный, конечный;</li>
+                            <li>открытый, закрытый;</li>
+                            <li>ударный, безударный.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Место ударения в слове и его характеристика:
+                        <ul>
+                            <li>подвижное и неподвижное.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Количество фонем в слове:
+                        <ul>
+                            <li>гласные и согласные.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Характеристика фонем.
+                        <ol type="1">
+                            <li>
+                                Гласные:
+                                <ul>
+                                    <li>если позиция фонемы сильная -- охарактеризовать ее также по качеству соседних согласных;</li>
+                                    <li>если позиция фонемы слабая -- охарактеризовать ее по отношению к ударному слогу.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Согласные:
+                                <ul>
+                                    <li>позиция фонемы -- сильная, частично слабая или абсолютно слабая;</li>
+                                    <li>сильная или слабая фонема;</li>
+                                    <li>характеристика фонемы по степени участия голоса и шума, по наличию или отсутствию палатализации, по месту и способу образования.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Количество звуков и букв.</li>
+                </ol>
+
+                <div class="example">
+                    <h3>Пример: <em>Шерстяной</em></h3>
+                    <p><strong>1.</strong> [шърс,тие-н,о.̯i]</p>
+                    <p><strong>2.</strong> Три слога: [шър--с,тие--н,о.̯i]. [шър] -- начальный, закрытый, безударный; [с,тие] -- неначальный, открытый, безударный; [н,о.̯i] -- конечный, закрытый, ударный.</p>
+                    <p><strong>3.</strong> Ударение на 3 слоге, неподвижное.</p>
+                    <p><strong>4.</strong> В слове 9 фонем, из них 6 согласных, 3 гласные.</p>
+                    <p><strong>5.</strong> Подробная характеристика каждой фонемы...</p>
+                    <p><strong>6.</strong> В слове 9 звуков и 9 букв.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="graphic-analysis">
+            <h2><i class="fas fa-chart-bar"></i> Порядок и образец графического анализа</h2>
+            <div class="content-box">
+                <ol class="analysis-steps">
+                    <li>Буквы в слове; названия букв; однозначные или двузначные.</li>
+                    <li>Фонетическая транскрипция слова.</li>
+                    <li>Количество букв и звуков; причина несовпадения (при наличии).</li>
+                    <li>Деление слова на слоги.</li>
+                    <li>Характеристика написания букв с учетом слогового принципа (случаи соответствия и несоответствия слоговому принципу).</li>
+                    <li>Употребление букв в основном или второстепенном значении.</li>
+                </ol>
+
+                <div class="example">
+                    <h3>Пример: <em>Оживление</em></h3>
+                    <p><strong>1.</strong> Буквы: о -- «о» (однозначная), ж -- «жэ» (однозначная), и -- «и» (двузначная), в -- «вэ» (двузначная), л -- «ль» (двузначная), е -- «е» (двузначная), н -- «н» (двузначная), и -- «и» (двузначная), е -- «е» (двузначная).</p>
+                    <p><strong>2.</strong> [˄жывл,ен,иjь]</p>
+                    <p><strong>3.</strong> В слове 9 букв, 10 звуков; последняя буква е обозначает два звука -- [jе].</p>
+                    <p><strong>4.</strong> [˄--жы--вл,е--н,и--jь]</p>
+                    <p><strong>5.</strong> Написание 2-го слога (жи) не соответствует слоговому принципу...</p>
+                    <p><strong>6.</strong> Значения букв: о -- второстепенное, ж -- основное, и -- второстепенное, в -- основное, л -- основное, е -- основное, н -- основное, и -- второстепенное (близкое к значению ь), е -- второстепенное.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="themes">
+            <h2><i class="fas fa-list-ol"></i> Темы практикума</h2>
+            <div class="themes-grid">
+                <a href="theme1.html" class="theme-card">
+                    <div class="theme-number">Тема 1</div>
+                    <h3>Артикуляционная характеристика гласных и согласных звуков</h3>
+                </a>
+                <a href="theme2.html" class="theme-card">
+                    <div class="theme-number">Тема 2</div>
+                    <h3>Фонетическая транскрипция</h3>
+                </a>
+                <a href="theme3.html" class="theme-card">
+                    <div class="theme-number">Тема 3</div>
+                    <h3>Классификация гласных звуков</h3>
+                </a>
+                <a href="theme4.html" class="theme-card">
+                    <div class="theme-number">Тема 4</div>
+                    <h3>Классификация согласных звуков</h3>
+                </a>
+                <a href="theme5.html" class="theme-card">
+                    <div class="theme-number">Тема 5</div>
+                    <h3>Изменения звуков в речевом потоке</h3>
+                </a>
+                <a href="theme6.html" class="theme-card">
+                    <div class="theme-number">Тема 6</div>
+                    <h3>Слог и слогораздел. Типы слогов</h3>
+                </a>
+                <a href="theme7.html" class="theme-card">
+                    <div class="theme-number">Тема 7</div>
+                    <h3>Суперсегментные единицы фонетики</h3>
+                </a>
+                <a href="theme8.html" class="theme-card">
+                    <div class="theme-number">Тема 8</div>
+                    <h3>Орфоэпия</h3>
+                </a>
+                <a href="theme9.html" class="theme-card">
+                    <div class="theme-number">Тема 9</div>
+                    <h3>Графика и орфография</h3>
+                </a>
+                <a href="theme10.html" class="theme-card">
+                    <div class="theme-number">Тема 10</div>
+                    <h3>Фонетический анализ</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="compilers">
+            <h2><i class="fas fa-users"></i> Составители</h2>
+            <div class="content-box">
+                <p><strong>Фонетика современного русского языка:</strong> практикум / составители И.Д. Дамбыра, С.В. Кечил-оол. -- Кызыл: Издательство ТувГУ, 2025. -- 46 с. -- Текст : непосредственный.</p>
+                <p>Практикум адресован студентам-бакалаврам, изучающим дисциплину «Современный русский литературный язык (фонетика)», и может быть использован как при проведении практических занятий, так и при организации и контроле самостоятельной работы студентов.</p>
+                <p>В пособии представлены задания для закрепления теории и практической работы по совершенствованию звукопроизношения и интонации.</p>
+                <p class="copyright">©Тувинский государственный университет, 2025</p>
+            </div>
+        </section>
     </main>
 
-        <script>
-            function divideWordsIntoRows() {
-                // ...
-            }
-
-            window.onload = function () {
-                divideWordsIntoRows();
-            };
-    </script>
-    <div id="explanationModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeExplanationModal()">&times;</span>
-            <p id="explanationText">Пояснение по ударению по выбранному слову</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-book-open"></i> Фонетика русского языка</h3>
+                    <p>Практикум для студентов-бакалавров</p>
+                </div>
+                <div class="footer-info">
+                    <p>© 2025 Все права защищены</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="quiz">
-        <p id="question">Вопрос: А вы знаете, как правильно выставить ударение в слове ЕРЕТИК?</p>
-        <div id="answerOptions">
-            <button onclick="checkAnswer('correct', 'новое слово 1')">Вариант ответа 1</button>
-            <span>или</span>
-            <button onclick="checkAnswer('incorrect', 'новое слово 2')">Вариант ответа 2</button>
-        </div>
-    </div>
-    <div id="result"></div>
-    <script src="script.js"></script>
-    <script>
-        // Вызов функции после загрузки страницы
-        window.onload = function () {
-            sortWordsAlphabetically();
-        };
-    </script>
-    <footer>
-        СЛОВАРЬ &copy; 2024
     </footer>
 
 </body>
 </html>
-tml>
